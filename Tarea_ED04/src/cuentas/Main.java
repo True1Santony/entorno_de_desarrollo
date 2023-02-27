@@ -5,7 +5,7 @@ public class Main {
         CCuenta cuenta1;
         double saldoActual;
 
-        cuenta1 = operativa_cuenta();
+        cuenta1 = operativa_cuenta(3000);
 
         try {
             cuenta1.retirar(2300);
@@ -20,7 +20,7 @@ public class Main {
         }
     }
 
-	private static CCuenta operativa_cuenta() {
+	private static CCuenta operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
 		double saldoActual;
 		cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
